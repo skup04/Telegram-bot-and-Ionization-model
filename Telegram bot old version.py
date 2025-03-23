@@ -9,7 +9,7 @@ bot = telebot.TeleBot(token)
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(message.chat.id,
-                     'Привет, Я телеграмм бот группы Fizfuck.Confessions, чтобы узнать больше напиши команду /help')
+                     'Привет, Я телеграмм бот группы Название_группы, чтобы узнать больше напиши команду /help')
 
 
 @bot.message_handler(commands=['help'])
@@ -31,9 +31,7 @@ def example(message):
 
 @bot.message_handler(commands=['more'])
 def description(message):
-    bot.send_message(message.chat.id, 'ссылка на канал: https://t.me/ff_conf \n'
-                                      'ссылка на беседу: https://t.me/ff_conf_chat \n'
-                                      'ссылка на бота: https://t.me/APDXnBot')
+    bot.send_message(message.chat.id, 'Help')
 
 
 def editor(x):
