@@ -15,7 +15,7 @@ pending_messages = {}
 
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
-    await message.reply("Привет, Я телеграмм бот группы Fizfuck.Confessions\n\n Любое сообщение, написанное в бота, будет передано на рассмотрение админу")
+    await message.reply("Привет, Я телеграмм бот группы Название_группы\n\n Любое сообщение, написанное в бота, будет передано на рассмотрение админу")
 
 
 
